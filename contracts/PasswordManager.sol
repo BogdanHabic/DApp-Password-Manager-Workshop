@@ -1,4 +1,5 @@
-pragma solidity ^0.4.25;
+pragma solidity ^0.5.0;
+
 contract PasswordManager {
     address public passwordOwner;
 
@@ -8,12 +9,12 @@ contract PasswordManager {
         passwordOwner = msg.sender;
     }
 
-    function sendHash(string x) public {
-        assert(msg.sender == passwordOwner);
+    function sendHash(string memory x) public {
+        require(msg.sender == passwordOwner);
         ipfsHash = x;
     }
 
-    function getHash() public view returns (string x) {
+    function getHash() public view returns (string memory x) {
         return ipfsHash;
     }
 }

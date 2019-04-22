@@ -1,6 +1,34 @@
-export const address = '0x965f1178c9c025e508163e1a759a43e3a356392d';
+export const address = '0x06354804D4aC44d7443e1f8f2Aa9E270764bE885';
 
 export const abi = [
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "passwordOwner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getHash",
+    "outputs": [
+      {
+        "name": "x",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
   {
     "constant": false,
     "inputs": [
@@ -20,33 +48,5 @@ export const abi = [
     "payable": false,
     "stateMutability": "nonpayable",
     "type": "constructor"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "getHash",
-    "outputs": [
-      {
-        "name": "x",
-        "type": "string"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "passwordOwner",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
   }
 ];
